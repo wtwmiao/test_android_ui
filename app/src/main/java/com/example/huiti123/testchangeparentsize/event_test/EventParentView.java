@@ -62,4 +62,11 @@ public class EventParentView extends RelativeLayout implements View.OnTouchListe
 
         return false;
     }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+
+        Log.v("EventParentView","onTouchEvent enter");
+        return super.onTouchEvent(event);
+    }
 }

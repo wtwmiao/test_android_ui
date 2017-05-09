@@ -56,9 +56,11 @@ public class EventChildView extends View  implements View.OnClickListener,View.O
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        Log.v("EventChildView","onTouchEvent enter");
         boolean ret =  super.onTouchEvent(event);
 
-        return  false;
+
+        return  ret;
        // return  ret;
     }
 }
