@@ -37,5 +37,11 @@
 
         />
 
+    <com.example.huiti123.testchangeparentsize.event_test.EventParentView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="@color/black_50_opacity">
+
+    </com.example.huiti123.testchangeparentsize.event_test.EventParentView>
 
 </RelativeLayout>

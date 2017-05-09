@@ -45,7 +45,6 @@ public class MyParentLayoutView extends RelativeLayout implements MyResizeSubVie
         subView = (MyResizeSubView) findViewById(R.id.sub_view);
         subView.setSizeDelegate(this);
 
-
     }
 
 

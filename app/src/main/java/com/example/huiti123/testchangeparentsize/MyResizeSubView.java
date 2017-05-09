@@ -107,7 +107,7 @@ public class MyResizeSubView extends View implements View.OnClickListener {
         int widthSize = MeasureSpec.getSize(widthMeasureSpec);
         int heightSize = MeasureSpec.getSize(heightMeasureSpec);
 
-        Log.i(TAG, "cur width = " + widthSize + "cur height = " + heightSize);
+        ///Log.i(TAG, "cur width = " + widthSize + "cur height = " + heightSize);
 
 
     }
