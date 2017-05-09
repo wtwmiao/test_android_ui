@@ -10,28 +10,29 @@ import android.view.View;
  * Created by huiti123 on 2017/5/3.
  */
 
-public class MyResizeSubView extends View {
+public class MyResizeSubView extends View implements View.OnClickListener {
 
     private AsyncTask mCurrentTask;
 
-    private  SubViewSizeChangeDelegate sizeDelegate;
+    private SubViewSizeChangeDelegate sizeDelegate;
 
-    private  final  String TAG = "MyResizeSubView";
-
+    private final String TAG = "MyResizeSubView";
 
 
     public MyResizeSubView(Context context) {
-        this(context, null,0);
+        this(context, null, 0);
     }
 
     public MyResizeSubView(Context context, AttributeSet attrs) {
-        this(context, attrs,0);
+        this(context, attrs, 0);
     }
 
-    public MyResizeSubView(Context context, AttributeSet atttrs, int defStyle){
-        super(context,atttrs,defStyle);
+    public MyResizeSubView(Context context, AttributeSet atttrs, int defStyle) {
+        super(context, atttrs, defStyle);
 
         startResizeTask();
+
+        setOnClickListener(this);
 
     }
 
@@ -39,10 +40,15 @@ public class MyResizeSubView extends View {
         this.sizeDelegate = sizeDelegate;
     }
 
+    @Override
+    public void onClick(View v) {
+        Log.i(TAG, "view on click");
+    }
 
-    interface SubViewSizeChangeDelegate{
 
-        void onSizeChangeDelegate(int w,int h);
+    interface SubViewSizeChangeDelegate {
+
+        void onSizeChangeDelegate(int w, int h);
 
     }
 
@@ -101,7 +107,7 @@ public class MyResizeSubView extends View {
         int widthSize = MeasureSpec.getSize(widthMeasureSpec);
         int heightSize = MeasureSpec.getSize(heightMeasureSpec);
 
-        Log.i(TAG, "cur width = "+widthSize+"cur height = " + heightSize);
+        Log.i(TAG, "cur width = " + widthSize + "cur height = " + heightSize);
 
 
     }

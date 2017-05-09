@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TestChangeParentSize</string>
+
+    <string name="hello">Hello RangeSeekBar!</string>
+
+
+
 </resources>

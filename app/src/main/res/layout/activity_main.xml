@@ -8,7 +8,6 @@
     tools:context="com.example.huiti123.testchangeparentsize.MainActivity">
 
 
-
     <Button
         android:id="@+id/my_button"
         android:layout_width="wrap_content"
@@ -16,7 +15,6 @@
         android:text="Button"
         tools:layout_editor_absoluteX="82dp"
         tools:layout_editor_absoluteY="16dp"/>
-
 
 
     <com.example.huiti123.testchangeparentsize.MyParentLayoutView
@@ -27,6 +25,17 @@
 
     </com.example.huiti123.testchangeparentsize.MyParentLayoutView>
 
+
+    <com.example.huiti123.testchangeparentsize.RangeSeekBar
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="200dp"
+        android:background="@color/red"
+        app:range="@color/colorAccent"
+        app:thumb="@color/colorPrimary"
+        app:track="@color/black"
+
+        />
 
 
 </RelativeLayout>
